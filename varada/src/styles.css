@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --myPrimary: orangered;
+    --box-shadow: 1px 1px 1px 1px var(--myPrimary);
+  }
+  @font-face {
+    font-family: "Space_Mono";
+    src: local("SpaceMono-Regular"),
+      url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+      font-size: '18px';
+      font-style: normal;
+  }
+  
+  html,
+  body {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    text-decoration: none !important;
+    height: 100%;
+  }
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
