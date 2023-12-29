@@ -1,0 +1,42 @@
+<header class="bg-purple-700 p-8">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div>
+        <a routerLink="/">Logo</a>
+      </div>
+  
+      <!-- Navigation Links for Medium and Larger Screens -->
+      <nav class="hidden md:flex items-center space-x-4 text-white">
+        <a routerLink="/" class="hover:text-yellow-50 hover:font-semibold">Home</a>
+        <a routerLink="/about" class="hover:text-yellow-50 hover:font-semibold">About Us</a>
+        <a routerLink="/products" class="hover:text-yellow-50 hover:font-semibold">Products</a>
+        <a routerLink="/services" class="hover:text-yellow-50 hover:font-semibold">Services</a>
+        <a routerLink="/gallery" class="hover:text-yellow-50 hover:font-semibold">Gallery</a>
+        <a routerLink="/careers" class="hover:text-yellow-50 hover:font-semibold">Careers</a>
+        <a routerLink="/contact" class="hover:text-yellow-50 hover:font-semibold">Contact Us</a>
+      </nav>
+  
+      <!-- Menu Icon for Small Devices -->
+      <div class="md:hidden">
+        <button id="menuButton" (click)="toggleMenu()">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Responsive Menu for Small Devices -->
+    <div class="md:hidden text-white" [ngClass]="{'block': isMenuOpen, 'hidden': !isMenuOpen}">
+      <ul class="flex flex-col items-center space-y-2">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/about" class="hover:text-yellow-50 hover:font-semibold">About Us</a></li>
+        <li><a routerLink="/products" class="hover:text-yellow-50 hover:font-semibold">Products</a></li>
+        <li><a routerLink="/services" class="hover:text-yellow-50 hover:font-semibold">Services</a></li>
+        <li><a routerLink="/gallery" class="hover:text-yellow-50 hover:font-semibold">Gallery</a></li>
+        <li><a routerLink="/careers" class="hover:text-yellow-50 hover:font-semibold">Careers</a></li>
+        <li><a routerLink="/contact" class="hover:text-yellow-50 hover:font-semibold">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+  
